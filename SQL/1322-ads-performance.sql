@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+SELECT AD_ID, IFNULL (ROUND(SUM(IF(ACTION='CLICKED',1,0)) / 
+                     SUM(IF(ACTION='CLICKED' OR ACTION='VIEWED',1,0)) * 100, 2), 0) AS CTR
+  FROM ADS
+ GROUP BY AD_ID
+ ORDER BY 2 DESC, 1 ASC

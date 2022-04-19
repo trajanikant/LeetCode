@@ -1,0 +1,192 @@
+#,Name,Acceptance,Level,Frequency,Link
+101,Symmetric Tree,50.80%,Easy,47.9519,https://leetcode.com/problems/symmetric-tree
+226,Invert Binary Tree,70.50%,Easy,47.4983,https://leetcode.com/problems/invert-binary-tree
+463,Island Perimeter,68.60%,Easy,42.1852,https://leetcode.com/problems/island-perimeter
+733,Flood Fill,57.30%,Easy,41.5868,https://leetcode.com/problems/flood-fill
+100,Same Tree,55.10%,Easy,29.1015,https://leetcode.com/problems/same-tree
+617,Merge Two Binary Trees,77.30%,Easy,26.6414,https://leetcode.com/problems/merge-two-binary-trees
+993,Cousins in Binary Tree,53.60%,Easy,26.6116,https://leetcode.com/problems/cousins-in-binary-tree
+104,Maximum Depth of Binary Tree,70.70%,Easy,25.302,https://leetcode.com/problems/maximum-depth-of-binary-tree
+1971,Find if Path Exists in Graph,49.80%,Easy,23.5651,https://leetcode.com/problems/find-if-path-exists-in-graph
+404,Sum of Left Leaves,54.40%,Easy,23.3399,https://leetcode.com/problems/sum-of-left-leaves
+637,Average of Levels in Binary Tree,67.90%,Easy,20.0474,https://leetcode.com/problems/average-of-levels-in-binary-tree
+653,Two Sum IV - Input is a BST,58.40%,Easy,13.7823,https://leetcode.com/problems/two-sum-iv-input-is-a-bst
+111,Minimum Depth of Binary Tree,41.80%,Easy,9.54312,https://leetcode.com/problems/minimum-depth-of-binary-tree
+783,Minimum Distance Between BST Nodes,55.60%,Easy,8.44347,https://leetcode.com/problems/minimum-distance-between-bst-nodes
+559,Maximum Depth of N-ary Tree,70.60%,Easy,7.36323,https://leetcode.com/problems/maximum-depth-of-n-ary-tree
+965,Univalued Binary Tree,68.70%,Easy,3.44313,https://leetcode.com/problems/univalued-binary-tree
+530,Minimum Absolute Difference in BST,55.90%,Easy,3.08513,https://leetcode.com/problems/minimum-absolute-difference-in-bst
+1469,Find All The Lonely Nodes,81.60%,Easy,0.75572,https://leetcode.com/problems/find-all-the-lonely-nodes
+815,Bus Routes,45.00%,Hard,94.627,https://leetcode.com/problems/bus-routes
+127,Word Ladder,34.20%,Hard,89.2541,https://leetcode.com/problems/word-ladder
+269,Alien Dictionary,34.50%,Hard,76.461,https://leetcode.com/problems/alien-dictionary
+297,Serialize and Deserialize Binary Tree,52.80%,Hard,73.1701,https://leetcode.com/problems/serialize-and-deserialize-binary-tree
+987,Vertical Order Traversal of a Binary Tree,40.60%,Hard,71.259,https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree
+329,Longest Increasing Path in a Matrix,48.80%,Hard,64.3904,https://leetcode.com/problems/longest-increasing-path-in-a-matrix
+1293,Shortest Path in a Grid with Obstacles Elimination,43.80%,Hard,62.6978,https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination
+317,Shortest Distance from All Buildings,43.60%,Hard,62.4445,https://leetcode.com/problems/shortest-distance-from-all-buildings
+827,Making A Large Island,44.60%,Hard,60.809,https://leetcode.com/problems/making-a-large-island
+126,Word Ladder II,26.30%,Hard,58.3166,https://leetcode.com/problems/word-ladder-ii
+773,Sliding Puzzle,62.80%,Hard,58.1064,https://leetcode.com/problems/sliding-puzzle
+428,Serialize and Deserialize N-ary Tree,63.80%,Hard,55.0576,https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree
+301,Remove Invalid Parentheses,46.40%,Hard,52.8256,https://leetcode.com/problems/remove-invalid-parentheses
+407,Trapping Rain Water II,46.40%,Hard,49.227,https://leetcode.com/problems/trapping-rain-water-ii
+778,Swim in Rising Water,58.20%,Hard,38.7994,https://leetcode.com/problems/swim-in-rising-water
+1263,Minimum Moves to Move a Box to Their Target Location,48.00%,Hard,35.9027,https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location
+847,Shortest Path Visiting All Nodes,55.90%,Hard,34.194,https://leetcode.com/problems/shortest-path-visiting-all-nodes
+854,K-Similar Strings,39.10%,Hard,32.9811,https://leetcode.com/problems/k-similar-strings
+749,Contain Virus,49.70%,Hard,32.8739,https://leetcode.com/problems/contain-virus
+1345,Jump Game IV,42.20%,Hard,26.6999,https://leetcode.com/problems/jump-game-iv
+839,Similar String Groups,44.60%,Hard,26.2248,https://leetcode.com/problems/similar-string-groups
+864,Shortest Path to Get All Keys,43.90%,Hard,26.2202,https://leetcode.com/problems/shortest-path-to-get-all-keys
+1036,Escape a Large Maze,34.20%,Hard,26.0686,https://leetcode.com/problems/escape-a-large-maze
+1284,Minimum Number of Flips to Convert Binary Matrix to Zero Matrix,71.00%,Hard,22.5708,https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix
+1568,Minimum Number of Days to Disconnect Island,49.30%,Hard,21.8295,https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island
+1368,Minimum Cost to Make at Least One Valid Path in a Grid,60.20%,Hard,21.4174,https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid
+2092,Find All People With Secret,30.90%,Hard,20.1225,https://leetcode.com/problems/find-all-people-with-secret
+765,Couples Holding Hands,56.30%,Hard,19.7952,https://leetcode.com/problems/couples-holding-hands
+1096,Brace Expansion II,62.20%,Hard,17.9536,https://leetcode.com/problems/brace-expansion-ii
+1970,Last Day Where You Can Still Cross,48.30%,Hard,14.6936,https://leetcode.com/problems/last-day-where-you-can-still-cross
+675,Cut Off Trees for Golf Event,35.50%,Hard,14.4716,https://leetcode.com/problems/cut-off-trees-for-golf-event
+1377,Frog Position After T Seconds,36.10%,Hard,12.9922,https://leetcode.com/problems/frog-position-after-t-seconds
+2045,Second Minimum Time to Reach Destination,35.50%,Hard,12.1682,https://leetcode.com/problems/second-minimum-time-to-reach-destination
+499,The Maze III,44.60%,Hard,12.047,https://leetcode.com/problems/the-maze-iii
+1483,Kth Ancestor of a Tree Node,33.10%,Hard,11.7651,https://leetcode.com/problems/kth-ancestor-of-a-tree-node
+302,Smallest Rectangle Enclosing Black Pixels,55.40%,Hard,11.1862,https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels
+1728,Cat and Mouse II,41.00%,Hard,11.1254,https://leetcode.com/problems/cat-and-mouse-ii
+685,Redundant Connection II,33.60%,Hard,10.1486,https://leetcode.com/problems/redundant-connection-ii
+488,Zuma Game,37.20%,Hard,5.54978,https://leetcode.com/problems/zuma-game
+928,Minimize Malware Spread II,41.80%,Hard,5.38792,https://leetcode.com/problems/minimize-malware-spread-ii
+514,Freedom Trail,45.90%,Hard,0,https://leetcode.com/problems/freedom-trail
+711,Number of Distinct Islands II,50.60%,Hard,0,https://leetcode.com/problems/number-of-distinct-islands-ii
+431,Encode N-ary Tree to Binary Tree,76.00%,Hard,0,https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree
+913,Cat and Mouse,35.30%,Hard,0,https://leetcode.com/problems/cat-and-mouse
+924,Minimize Malware Spread,41.80%,Hard,0,https://leetcode.com/problems/minimize-malware-spread
+1203,Sort Items by Groups Respecting Dependencies,49.10%,Hard,0,https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies
+1210,Minimum Moves to Reach Target with Rotations,47.80%,Hard,0,https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations
+1298,Maximum Candies You Can Get from Boxes,60.90%,Hard,0,https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes
+1766,Tree of Coprimes,38.00%,Hard,0,https://leetcode.com/problems/tree-of-coprimes
+200,Number of Islands,52.70%,Medium,100,https://leetcode.com/problems/number-of-islands
+1197,Minimum Knight Moves,39.40%,Medium,83.8811,https://leetcode.com/problems/minimum-knight-moves
+314,Binary Tree Vertical Order Traversal,50.20%,Medium,78.5284,https://leetcode.com/problems/binary-tree-vertical-order-traversal
+529,Minesweeper,64.00%,Medium,75.4097,https://leetcode.com/problems/minesweeper
+364,Nested List Weight Sum II,67.30%,Medium,72.8886,https://leetcode.com/problems/nested-list-weight-sum-ii
+339,Nested List Weight Sum,79.60%,Medium,71.9223,https://leetcode.com/problems/nested-list-weight-sum
+863,All Nodes Distance K in Binary Tree,60.30%,Medium,71.3108,https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree
+199,Binary Tree Right Side View,58.80%,Medium,70.5957,https://leetcode.com/problems/binary-tree-right-side-view
+994,Rotting Oranges,51.40%,Medium,68.8166,https://leetcode.com/problems/rotting-oranges
+909,Snakes and Ladders,40.00%,Medium,67.257,https://leetcode.com/problems/snakes-and-ladders
+721,Accounts Merge,55.10%,Medium,67.2123,https://leetcode.com/problems/accounts-merge
+322,Coin Change,39.40%,Medium,66.6965,https://leetcode.com/problems/coin-change
+695,Max Area of Island,68.60%,Medium,65.489,https://leetcode.com/problems/max-area-of-island
+207,Course Schedule,44.80%,Medium,65.3997,https://leetcode.com/problems/course-schedule
+210,Course Schedule II,45.70%,Medium,62.3,https://leetcode.com/problems/course-schedule-ii
+103,Binary Tree Zigzag Level Order Traversal,52.60%,Medium,59.7437,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal
+399,Evaluate Division,56.40%,Medium,59.4614,https://leetcode.com/problems/evaluate-division
+787,Cheapest Flights Within K Stops,36.50%,Medium,58.6205,https://leetcode.com/problems/cheapest-flights-within-k-stops
+934,Shortest Bridge,52.00%,Medium,58.5007,https://leetcode.com/problems/shortest-bridge
+1091,Shortest Path in Binary Matrix,41.80%,Medium,57.7614,https://leetcode.com/problems/shortest-path-in-binary-matrix
+279,Perfect Squares,51.40%,Medium,53.7594,https://leetcode.com/problems/perfect-squares
+133,Clone Graph,44.70%,Medium,51.965,https://leetcode.com/problems/clone-graph
+1319,Number of Operations to Make Network Connected,56.90%,Medium,50.9257,https://leetcode.com/problems/number-of-operations-to-make-network-connected
+286,Walls and Gates,58.50%,Medium,50.8325,https://leetcode.com/problems/walls-and-gates
+1448,Count Good Nodes in Binary Tree,73.00%,Medium,49.9862,https://leetcode.com/problems/count-good-nodes-in-binary-tree
+365,Water and Jug Problem,33.40%,Medium,49.499,https://leetcode.com/problems/water-and-jug-problem
+417,Pacific Atlantic Water Flow,47.40%,Medium,48.9451,https://leetcode.com/problems/pacific-atlantic-water-flow
+130,Surrounded Regions,33.10%,Medium,47.0587,https://leetcode.com/problems/surrounded-regions
+694,Number of Distinct Islands,59.30%,Medium,45.7143,https://leetcode.com/problems/number-of-distinct-islands
+662,Maximum Width of Binary Tree,39.70%,Medium,40.6134,https://leetcode.com/problems/maximum-width-of-binary-tree
+542,01 Matrix,43.30%,Medium,40.205,https://leetcode.com/problems/01-matrix
+102,Binary Tree Level Order Traversal,59.80%,Medium,40.0014,https://leetcode.com/problems/binary-tree-level-order-traversal
+797,All Paths From Source to Target,80.50%,Medium,39.2906,https://leetcode.com/problems/all-paths-from-source-to-target
+1242,Web Crawler Multithreaded,48.30%,Medium,38.4034,https://leetcode.com/problems/web-crawler-multithreaded
+547,Number of Provinces,62.40%,Medium,38.2882,https://leetcode.com/problems/number-of-provinces
+1993,Operations on Tree,40.50%,Medium,37.7886,https://leetcode.com/problems/operations-on-tree
+652,Find Duplicate Subtrees,55.20%,Medium,37.1135,https://leetcode.com/problems/find-duplicate-subtrees
+1466,Reorder Routes to Make All Paths Lead to the City Zero,61.10%,Medium,35.869,https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero
+785,Is Graph Bipartite?,49.90%,Medium,35.6677,https://leetcode.com/problems/is-graph-bipartite
+1926,Nearest Exit from Entrance in Maze,36.90%,Medium,35.6536,https://leetcode.com/problems/nearest-exit-from-entrance-in-maze
+959,Regions Cut By Slashes,68.50%,Medium,35.484,https://leetcode.com/problems/regions-cut-by-slashes
+449,Serialize and Deserialize BST,55.70%,Medium,35.0742,https://leetcode.com/problems/serialize-and-deserialize-bst
+1102,Path With Maximum Minimum Value,52.20%,Medium,34.3697,https://leetcode.com/problems/path-with-maximum-minimum-value
+116,Populating Next Right Pointers in Each Node,55.20%,Medium,33.879,https://leetcode.com/problems/populating-next-right-pointers-in-each-node
+1306,Jump Game III,62.50%,Medium,33.4953,https://leetcode.com/problems/jump-game-iii
+1654,Minimum Jumps to Reach Home,25.90%,Medium,32.9921,https://leetcode.com/problems/minimum-jumps-to-reach-home
+490,The Maze,54.20%,Medium,32.1253,https://leetcode.com/problems/the-maze
+1236,Web Crawler,65.40%,Medium,31.1638,https://leetcode.com/problems/web-crawler
+433,Minimum Genetic Mutation,45.30%,Medium,31.1174,https://leetcode.com/problems/minimum-genetic-mutation
+752,Open the Lock,55.10%,Medium,30.9865,https://leetcode.com/problems/open-the-lock
+690,Employee Importance,62.80%,Medium,30.8728,https://leetcode.com/problems/employee-importance
+1254,Number of Closed Islands,62.90%,Medium,30.5064,https://leetcode.com/problems/number-of-closed-islands
+582,Kill Process,65.90%,Medium,30.4257,https://leetcode.com/problems/kill-process
+1730,Shortest Path to Get Food,54.30%,Medium,29.6991,https://leetcode.com/problems/shortest-path-to-get-food
+1162,As Far from Land as Possible,47.50%,Medium,29.2909,https://leetcode.com/problems/as-far-from-land-as-possible
+261,Graph Valid Tree,45.10%,Medium,27.8399,https://leetcode.com/problems/graph-valid-tree
+323,Number of Connected Components in an Undirected Graph,60.30%,Medium,26.128,https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
+1129,Shortest Path with Alternating Colors,41.40%,Medium,25.5172,https://leetcode.com/problems/shortest-path-with-alternating-colors
+117,Populating Next Right Pointers in Each Node II,45.40%,Medium,25.3839,https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii
+919,Complete Binary Tree Inserter,63.20%,Medium,24.8796,https://leetcode.com/problems/complete-binary-tree-inserter
+1631,Path With Minimum Effort,51.50%,Medium,24.7403,https://leetcode.com/problems/path-with-minimum-effort
+515,Find Largest Value in Each Tree Row,64.10%,Medium,24.6908,https://leetcode.com/problems/find-largest-value-in-each-tree-row
+1161,Maximum Level Sum of a Binary Tree,66.80%,Medium,24.4204,https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree
+1740,Find Distance in a Binary Tree,68.50%,Medium,24.183,https://leetcode.com/problems/find-distance-in-a-binary-tree
+958,Check Completeness of a Binary Tree,53.20%,Medium,23.847,https://leetcode.com/problems/check-completeness-of-a-binary-tree
+742,Closest Leaf in a Binary Tree,45.20%,Medium,22.4208,https://leetcode.com/problems/closest-leaf-in-a-binary-tree
+1257,Smallest Common Region,62.40%,Medium,22.1316,https://leetcode.com/problems/smallest-common-region
+886,Possible Bipartition,46.60%,Medium,22.0688,https://leetcode.com/problems/possible-bipartition
+743,Network Delay Time,47.60%,Medium,21.9748,https://leetcode.com/problems/network-delay-time
+967,Numbers With Same Consecutive Differences,46.70%,Medium,21.7218,https://leetcode.com/problems/numbers-with-same-consecutive-differences
+1376,Time Needed to Inform All Employees,58.00%,Medium,20.7767,https://leetcode.com/problems/time-needed-to-inform-all-employees
+841,Keys and Rooms,68.10%,Medium,20.1774,https://leetcode.com/problems/keys-and-rooms
+1519,Number of Nodes in the Sub-Tree With the Same Label,39.10%,Medium,19.9554,https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label
+1559,Detect Cycles in 2D Grid,47.60%,Medium,19.5616,https://leetcode.com/problems/detect-cycles-in-2d-grid
+865,Smallest Subtree with all the Deepest Nodes,67.10%,Medium,18.1021,https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes
+684,Redundant Connection,60.80%,Medium,18.0034,https://leetcode.com/problems/redundant-connection
+655,Print Binary Tree,58.60%,Medium,17.0428,https://leetcode.com/problems/print-binary-tree
+1123,Lowest Common Ancestor of Deepest Leaves,69.50%,Medium,15.8635,https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves
+1202,Smallest String With Swaps,51.80%,Medium,15.5435,https://leetcode.com/problems/smallest-string-with-swaps
+310,Minimum Height Trees,37.80%,Medium,15.0457,https://leetcode.com/problems/minimum-height-trees
+1765,Map of Highest Peak,59.00%,Medium,14.4635,https://leetcode.com/problems/map-of-highest-peak
+1905,Count Sub Islands,62.30%,Medium,14.3608,https://leetcode.com/problems/count-sub-islands
+1245,Tree Diameter,62.40%,Medium,13.7049,https://leetcode.com/problems/tree-diameter
+802,Find Eventual Safe States,51.60%,Medium,12.9639,https://leetcode.com/problems/find-eventual-safe-states
+513,Find Bottom Left Tree Value,64.50%,Medium,12.8614,https://leetcode.com/problems/find-bottom-left-tree-value
+1325,Delete Leaves With a Given Value,74.80%,Medium,12.4698,https://leetcode.com/problems/delete-leaves-with-a-given-value
+1042,Flower Planting With No Adjacent,49.60%,Medium,11.4718,https://leetcode.com/problems/flower-planting-with-no-adjacent
+672,Bulb Switcher II,50.80%,Medium,11.0207,https://leetcode.com/problems/bulb-switcher-ii
+1391,Check if There is a Valid Path in a Grid,46.30%,Medium,10.8925,https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid
+1087,Brace Expansion,64.10%,Medium,10.7728,https://leetcode.com/problems/brace-expansion
+1034,Coloring A Border,47.90%,Medium,10.6486,https://leetcode.com/problems/coloring-a-border
+1443,Minimum Time to Collect All Apples in a Tree,55.30%,Medium,10.4587,https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree
+1462,Course Schedule IV,47.30%,Medium,10.1112,https://leetcode.com/problems/course-schedule-iv
+1361,Validate Binary Tree Nodes,41.80%,Medium,10.074,https://leetcode.com/problems/validate-binary-tree-nodes
+737,Sentence Similarity II,47.70%,Medium,9.92901,https://leetcode.com/problems/sentence-similarity-ii
+1367,Linked List in Binary Tree,42.30%,Medium,9.74142,https://leetcode.com/problems/linked-list-in-binary-tree
+1485,Clone Binary Tree With Random Pointer,79.40%,Medium,9.15053,https://leetcode.com/problems/clone-binary-tree-with-random-pointer
+505,The Maze II,50.80%,Medium,8.96626,https://leetcode.com/problems/the-maze-ii
+2059,Minimum Operations to Convert Number,45.20%,Medium,8.86033,https://leetcode.com/problems/minimum-operations-to-convert-number
+1315,Sum of Nodes with Even-Valued Grandparent,85.00%,Medium,7.76037,https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent
+107,Binary Tree Level Order Traversal II,57.70%,Medium,7.29298,https://leetcode.com/problems/binary-tree-level-order-traversal-ii
+1267,Count Servers that Communicate,58.00%,Medium,6.69806,https://leetcode.com/problems/count-servers-that-communicate
+1490,Clone N-ary Tree,82.80%,Medium,6.23385,https://leetcode.com/problems/clone-n-ary-tree
+1379,Find a Corresponding Node of a Binary Tree in a Clone of That Tree,85.30%,Medium,5.67097,https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree
+1020,Number of Enclaves,61.10%,Medium,5.34428,https://leetcode.com/problems/number-of-enclaves
+756,Pyramid Transition Matrix,55.10%,Medium,5.29527,https://leetcode.com/problems/pyramid-transition-matrix
+429,N-ary Tree Level Order Traversal,68.40%,Medium,4.96959,https://leetcode.com/problems/n-ary-tree-level-order-traversal
+1311,Get Watched Videos by Your Friends,44.90%,Medium,4.9282,https://leetcode.com/problems/get-watched-videos-by-your-friends
+1302,Deepest Leaves Sum,85.60%,Medium,3.71789,https://leetcode.com/problems/deepest-leaves-sum
+2039,The Time When the Network Becomes Idle,48.10%,Medium,3.22722,https://leetcode.com/problems/the-time-when-the-network-becomes-idle
+1992,Find All Groups of Farmland,66.20%,Medium,1.60886,https://leetcode.com/problems/find-all-groups-of-farmland
+1609,Even Odd Tree,52.70%,Medium,1.08298,https://leetcode.com/problems/even-odd-tree
+623,Add One Row to Tree,53.60%,Medium,0,https://leetcode.com/problems/add-one-row-to-tree
+1215,Stepping Numbers,44.90%,Medium,0,https://leetcode.com/problems/stepping-numbers
+1273,Delete Tree Nodes,61.20%,Medium,0,https://leetcode.com/problems/delete-tree-nodes
+1261,Find Elements in a Contaminated Binary Tree,75.50%,Medium,0,https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree
+1430,Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree,45.50%,Medium,0,https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree
+1457,Pseudo-Palindromic Paths in a Binary Tree,67.70%,Medium,0,https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree
+1602,Find Nearest Right Node in Binary Tree,73.90%,Medium,0,https://leetcode.com/problems/find-nearest-right-node-in-binary-tree
+1625,Lexicographically Smallest String After Applying Operations,66.10%,Medium,0,https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations
+1660,Correct a Binary Tree,72.80%,Medium,0,https://leetcode.com/problems/correct-a-binary-tree
+1778,Shortest Path in a Hidden Grid,42.80%,Medium,0,https://leetcode.com/problems/shortest-path-in-a-hidden-grid
+1810,Minimum Path Cost in a Hidden Grid,53.10%,Medium,0,https://leetcode.com/problems/minimum-path-cost-in-a-hidden-grid
+2101,Detonate the Maximum Bombs,38.80%,Medium,0,https://leetcode.com/problems/detonate-the-maximum-bombs

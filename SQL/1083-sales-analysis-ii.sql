@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+
+SELECT S.BUYER_ID
+  FROM SALES AS S
+       JOIN PRODUCT AS P ON S.PRODUCT_ID = P.PRODUCT_ID
+ GROUP BY S.BUYER_ID
+HAVING SUM(P.PRODUCT_NAME = 'S8') > 0 
+       AND SUM(P.PRODUCT_NAME = 'iPhone') = 0
