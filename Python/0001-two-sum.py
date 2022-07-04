@@ -1,9 +1,8 @@
 class Solution:
-    def twoSum(self, nums, target):
-        hash = {}
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            if (complement in hash and hash[complement] != i):
-                return (hash[complement], i)
-            else:
-                hash[nums[i]] = i
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        allDict = defaultdict(int)
+        for i, v in enumerate(nums):
+            complement = target - v
+            if complement in allDict:
+                return [allDict[complement], i]
+            allDict[v] = i
