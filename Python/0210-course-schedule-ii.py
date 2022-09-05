@@ -1,33 +1,31 @@
 class Solution:
-    def findOrder(self, numCourses, prerequisites):
-        self.adjacency_list = defaultdict(set)
-        for i, j in prerequisites:
-            self.adjacency_list[i].add(j)
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        hashMap = {i:[] for i in range(numCourses)}
+        check = defaultdict(lambda:0)
+        seen = set()
+        final = []
 
-        print(self.adjacency_list)
-        self.Visited = [0] * numCourses
-        self.Ans, self.FoundCycle = [], 0
+        for i in prerequisites:
+            x, y = i
+            hashMap[x].append(y)
 
-        for i in range(numCourses):
-            if self.FoundCycle == 1:
-                break
-            if self.Visited[i] == 0:
-                self.dfs(i)
+        def dfs(curCourse):
+            if check[curCourse] == 1:
+                return True
+            if check[curCourse] == -1:
+                return False
 
-        if self.FoundCycle == 1:
-            return []
+            seen.add(curCourse)
+            for i in hashMap[curCourse]:
+                if i in seen or not dfs(i):
+                    return False
 
-        else:
-            return(self.Ans)
+            check[curCourse] = 1
+            seen.remove(curCourse)
+            final.append(curCourse)
+            return True
 
-    def dfs(self, new_course):
-        if self.FoundCycle == 1:
-            return
-        if self.Visited[new_course] == 1:
-            self.FoundCycle = 1
-        if self.Visited[new_course] == 0:
-            self.Visited[new_course] = 1
-            for next_courses in self.adjacency_list[new_course]:
-                self.dfs(next_courses)
-            self.Visited[new_course] = 2
-            self.Ans.append(new_course)
+        for i in hashMap:
+            if not dfs(i):
+                return []
+        return final
