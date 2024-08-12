@@ -1,13 +1,12 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        hashMap = dict({')':'(', '}':'{', ']':'['})
-        
-        st = []
+        bracket_dict = {')':'(', ']':'[', '}':'{'}
+        stack  = []
+
         for i in s:
-            if len(st):
-                if i in hashMap and st[-1] == hashMap[i]:   st.pop()
-                else:                                       st.append(i)
+            if stack and i in bracket_dict and stack[-1] == bracket_dict[i]:
+                stack.pop()
             else:
-                st.append(i)
-        
-        return False if st else True
+                stack.append(i)
+
+        return len(stack) == 0
