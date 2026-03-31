@@ -1,0 +1,35 @@
+{
+    "LeetCode Template": {
+        "prefix": "lc",
+        "body": [
+            "\"\"\"",
+            "Problem: $1",
+            "LeetCode Link: $2",
+            "Difficulty: $3",
+            "Date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+            "\"\"\"",
+            "",
+            "$0"
+        ],
+        "description": "Template for new LeetCode Python file with automatic date and time"
+    },
+    "LeetCode Python Header": {
+        "prefix": "py",
+        "body": [
+            "\"\"\"",
+            "Problem: $1",
+            "LeetCode Link: https://leetcode.com/problems/$2/",
+            "Difficulty: $3",
+            "Topics: $4",
+            "Companies 3 months: N/A",
+            "Companies 6 months: N/A",
+            "Companies >6 months: N/A",
+            "Similar Questions (Top 5): $5",
+            "Date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}",
+            "\"\"\"",
+            "",
+            "$0"
+        ],
+        "description": "Populate LeetCode Python file header with problem info"
+    }
+}

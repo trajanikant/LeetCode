@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Manual LeetCode Header (Do Not Auto Trigger)",
+            "type": "shell",
+            "command": "echo",
+            "args": ["Use extension instead"],
+            "problemMatcher": []
+        }
+    ]
+}
