@@ -1,24 +1,24 @@
 import sys
 import os
 import json
-import time
+import re
 from datetime import datetime
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError
 import pyperclip
-import re
 
 # ---------------- CONFIG ----------------
 API_URL = "https://leetcode.com/graphql"
 PYTHON_DIR = r"F:\Github\LeetCode\Python"
 DEFAULT_TOP_N = 5
-LOGGING = True  # Set to True to see debug info
+LOGGING = True
 # ---------------------------------------
 
 def log(*args):
     if LOGGING:
         print("[LOG]", *args)
 
+# ---------- NETWORK / API ----------
 def post(query, variables=None):
     data = json.dumps({"query": query, "variables": variables or {}}).encode("utf-8")
     req = Request(API_URL, data=data, headers={"Content-Type": "application/json","User-Agent": "Mozilla/5.0"})
@@ -32,7 +32,6 @@ def post(query, variables=None):
 
 def resolve_input(arg):
     log("Resolving input:", arg)
-    log(f"Input is slug: {arg}")
     return arg
 
 def fetch_problem(slug):
@@ -51,7 +50,6 @@ def fetch_problem(slug):
     log(f"Fetching problem data for slug '{slug}'...")
     resp = post(query, {"titleSlug": slug})
     if "errors" in resp:
-        log("GraphQL errors:", resp["errors"])
         raise Exception(f"GraphQL errors: {resp['errors']}")
     question = resp.get("data", {}).get("question")
     if not question:
@@ -59,28 +57,74 @@ def fetch_problem(slug):
     log("Problem data fetched successfully")
     return question
 
-def format_similar(similar_json, top_n):
-    try:
-        data = json.loads(similar_json)
-        top = data[:top_n]
-        lines = [f'{q["title"]} (https://leetcode.com/problems/{q["titleSlug"]}/)' for q in top]
-        return ",\n".join(lines) if lines else "N/A"
-    except Exception as e:
-        log("Error formatting similar questions:", e)
-        return "N/A"
+# ---------- COMPANY BLOCK FORMATTING ----------
+def format_companies_block(raw_lines: list) -> dict:
+    """Convert multi-line company block into structured inline dictionary safely."""
+    result = {"3m": "", "6m": "", ">6m": ""}
+    current_key = None
+    temp_list = []
+    mapping = {"3 months": "3m", "6 months": "6m", ">6 months": ">6m"}
 
-def fetch_problem_live(slug):
-    data = fetch_problem(slug)
-    # Companies skipped; just N/A
-    data["companies"] = {
-        "3m": "N/A",
-        "6m": "N/A",
-        ">6m": "N/A"
-    }
-    return data
+    for line in raw_lines:
+        line = line.strip()
+        if not line:
+            continue
+        if any(line.startswith(k) for k in mapping):
+            if current_key and temp_list:
+                if len(temp_list) % 2 != 0:
+                    temp_list.append("N/A")
+                result[current_key] = ", ".join(
+                    f"{temp_list[i]} - {temp_list[i+1]}" for i in range(0, len(temp_list), 2)
+                )
+            for k, v in mapping.items():
+                if line.startswith(k):
+                    current_key = v
+                    break
+            temp_list = []
+        else:
+            temp_list.append(line)
+    # final block
+    if current_key and temp_list:
+        if len(temp_list) % 2 != 0:
+            temp_list.append("N/A")
+        result[current_key] = ", ".join(
+            f"{temp_list[i]} - {temp_list[i+1]}" for i in range(0, len(temp_list), 2)
+        )
+    return result
 
+def update_companies_in_file(filepath):
+    """Detect and reformat the company block in an existing file."""
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    header_match = re.search(r'3 months\s*:(.*?)>6 months\s*:.*?(?=Similar Qs)', content, re.S)
+    if not header_match:
+        return
+
+    raw_block = header_match.group(0)
+    raw_lines = [line.strip() for line in raw_block.splitlines() if line.strip()]
+    formatted_companies = format_companies_block(raw_lines)
+
+    new_block = (
+        f"3 months    : {formatted_companies.get('3m', 'N/A')}\n"
+        f"6 months    : {formatted_companies.get('6m', 'N/A')}\n"
+        f">6 months   : {formatted_companies.get('>6m', 'N/A')}\n\n"
+    )
+
+    new_content = content.replace(raw_block, new_block)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    print(f"Updated companies in {os.path.basename(filepath)}")
+
+def update_all_other_files(current_file):
+    """Update company blocks for all files except the current file."""
+    for filename in os.listdir(PYTHON_DIR):
+        # if filename.endswith(".py") and filename != current_file:
+        if filename.endswith(".py"):
+            update_companies_in_file(os.path.join(PYTHON_DIR, filename))
+
+# ---------- HEADER GENERATION ----------
 def get_frontend_id(slug):
-    # Look in PYTHON_DIR for file matching pattern ****-slug.py
     if not os.path.exists(PYTHON_DIR):
         os.makedirs(PYTHON_DIR)
     pattern = re.compile(r"(\d+)-" + re.escape(slug) + r"\.py$")
@@ -88,11 +132,9 @@ def get_frontend_id(slug):
         m = pattern.match(f)
         if m:
             return int(m.group(1))
-    # If not found, prompt user
     while True:
         try:
             qid = int(input(f"Enter frontend number for slug '{slug}': ").strip())
-            # create dummy file to save number
             filename = f"{qid:04d}-{slug}.py"
             filepath = os.path.join(PYTHON_DIR, filename)
             if not os.path.exists(filepath):
@@ -102,24 +144,43 @@ def get_frontend_id(slug):
         except ValueError:
             print("Invalid number. Try again.")
 
-def generate_header(data, top_n=DEFAULT_TOP_N):
+def generate_header(data, time_taken="N/A", revision="N", top_n=DEFAULT_TOP_N):
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    topics = ", ".join(t["name"] for t in data["topicTags"]) or "N/A"
-    similar = format_similar(data["similarQuestions"], top_n)
-    companies = data.get("companies", {"3m":"N/A","6m":"N/A",">6m":"N/A"})
+    topics = ", ".join(t["name"] for t in data.get("topicTags", [])) or "N/A"
+
+    try:
+        similar_json = data.get("similarQuestions", "[]")
+        similar_list = json.loads(similar_json)
+        similar_top = similar_list[:top_n]
+        similar_str = ",\n".join(
+            f'{q["title"]} (https://leetcode.com/problems/{q["titleSlug"]}/)'
+            for q in similar_top
+        ) if similar_top else "N/A"
+    except Exception:
+        similar_str = "N/A"
+
+    companies = {"3m": "N/A", "6m": "N/A", ">6m": "N/A"}
     qid = get_frontend_id(data["titleSlug"])
-    return f'''"""
-Problem: {qid:04d}. {data["title"]}
-LeetCode Link: https://leetcode.com/problems/{data["titleSlug"]}/description/
-Difficulty: {data["difficulty"]}
-Topics: {topics}
-Companies 3 months: {companies["3m"]}
-Companies 6 months: {companies["6m"]}
-Companies >6 months: {companies[">6m"]}
-Similar Questions (Top {top_n}):
-{similar}
-Date: {now}
-"""'''
+
+    header = f'''"""
+Problem     : {qid:04d}. {data["title"]}
+Link        : https://leetcode.com/problems/{data["titleSlug"]}/description/
+Difficulty  : {data.get("difficulty", "N/A")}
+Topics      : {topics}
+
+3 months    : {companies.get("3m")}
+6 months    : {companies.get("6m")}
+>6 months   : {companies.get(">6m")}
+
+Similar Qs  :
+{similar_str}
+
+Time Taken  : {time_taken}
+Date        : {now}
+Revision    : {revision}
+"""
+'''
+    return header
 
 def save_to_file(slug, header):
     qid = get_frontend_id(slug)
@@ -133,21 +194,29 @@ def save_to_file(slug, header):
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(header + "\n\n")
     print(f"Saved to {filepath}")
+    return filename  # return current file for skipping
 
+# ---------- MAIN ----------
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python lc.py <problem-slug> [top-N]")
+        print("Usage: python lc.py <problem-slug> [top-N] [time-taken] [revision]")
         return
+
     slug = sys.argv[1].strip()
     top_n = int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_TOP_N
+    time_taken = sys.argv[3] if len(sys.argv) > 3 else "N/A"
+    revision = sys.argv[4] if len(sys.argv) > 4 else "N"
+
     try:
         slug = resolve_input(slug)
-        data = fetch_problem_live(slug)
-        header = generate_header(data, top_n)
+        data = fetch_problem(slug)
+        header = generate_header(data, time_taken=time_taken, revision=revision, top_n=top_n)
         print(header)
         pyperclip.copy(header)
         print("\n[Header copied to clipboard!]")
-        save_to_file(slug, header)
+        current_file = save_to_file(slug, header)
+        # Reformat all other files' company blocks
+        update_all_other_files(current_file)
     except Exception as e:
         print("Error:", e)
 

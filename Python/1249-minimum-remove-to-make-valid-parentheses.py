@@ -1,16 +1,22 @@
 """
-Problem: 1249. Minimum Remove to Make Valid Parentheses
-LeetCode Link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
-Difficulty: Medium
-Topics: String, Stack
-Companies 3 months: N/A
-Companies 6 months: N/A
-Companies >6 months: N/A
-Similar Questions (Top 5):
+Problem     : 1249. Minimum Remove to Make Valid Parentheses
+Link        : https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
+Difficulty  : Medium
+Topics      : String, Stack
+
+3 months    : 
+6 months    : 
+>6 months   : 
+
+Similar Qs  :
 Minimum Number of Swaps to Make the String Balanced (https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/),
 Check if a Parentheses String Can Be Valid (https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/)
-Date: 2026-03-30 22:04:12
+
+Time Taken  : N/A
+Date        : 2026-03-31 00:41:58
+Revision    : N
 """
+
 
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
